@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+::selection{
+    color: rgb(212, 214, 62);
+    background: black;
+}
+nav{
+    position: fixed;
+    background: #a09e9e62;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+
+}
+nav .menu{
+    max-width: 100%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.menu .logo a{
+    text-decoration: none;
+    color:rgb(255, 255, 255) ;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.menu ul{
+    display: inline-flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+.menu ul li:first-child{
+    margin-left: 0px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(106, 109, 111); */
+    font-size: 16;
+    padding: 8px 15px;
+    border-radius: 25px;
+    /* transition: all 0.3s ease; */
+    /* opacity: .8; */
+}
+.menu ul li a:hover{
+    /* background-color:#0000005d; */
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 1.03rem;
+}
+img{
+    background: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(228, 49, 49, 0.4);
+}
+.center{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+
+}
+.center .title{
+    color: rgb(219, 230, 106);
+    font-size: 52px;
+}
+.center .sub-title{
+    color: rgb(219, 230, 106);
+    font-size: 42px;
+}
+.center .btn{
+    margin-top: 20px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+  
+    
+}
+.center .btn button{
+   
+
+    height: 35px;
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    /* padding: 2px; */
+    cursor: pointer;
+    outline: none;
+    /* transition: all 0.3s ease; */
+}
+.center .btn button:first-child{
+    background-color: green;
+    color: white ;
+}
+.center .btn button:last-child{
+    background-color: red;
+    color:whitesmoke
+}
+.center .btn button:hover{
+    background-color: black;
+    color:white;
+    font-size: 1.01rem;
+}
